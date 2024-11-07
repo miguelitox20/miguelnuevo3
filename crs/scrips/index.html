@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+    
+    <header>
+        <h1>Miguel rodriguez</h1>
+        <nav>
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>Hola, soy Miguel, un estudiante de ingenieria apacionado por la creación de sitios web modernos y funcionales. Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente. </p>
+    </section>
+
+    
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript y jQuery</li>
+            <li>Bases de datos SQL y NoSQL</li>
+            <li>Git y GitHub</li>
+           
+        </ul>
+    </section>
+
+    
+    <footer id="contacto">
+        <p>Contacto: <a href="mailto:mrf0920@gmail.com">mrf0920@gmail.com</a></p>
+        <p>Teléfono: +57 3008230116</p>
+
+        
+        <button id="welcomeBtn">bienvenida</button>
+
+        
+        <h3>Formulario de Contacto</h3>
+        <form id="contactForm" onsubmit="return validarFormulario(event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+
+</body>
+</html>
